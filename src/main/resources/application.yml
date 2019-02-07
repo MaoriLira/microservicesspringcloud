@@ -1,4 +1,14 @@
-spring:
-  profiles:
-    active:
-    - native
+spring:    
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MaoriLira/microservicesspringcloud
+          #user
+          #Pass
+security:
+  basic:
+    enabled: true
+  user:
+    name: mao
+    password: mao
